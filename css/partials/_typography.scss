@@ -1,0 +1,135 @@
+//Typography of project
+// Title functions
+
+@mixin titles($size, $device: desktop){
+
+    font-family: "Zen Dots", sans-serif;
+    //H1
+    @if $size == h1 and $device == desktop{
+        font-size: 96px;
+        line-height: 100%;
+        letter-spacing: 15px;
+    }@else if $size == h1 and $device == mobile{
+        font-size: 42px;
+        line-height: 110%;
+        letter-spacing: 15px;
+    }
+
+    //H2
+    @else if $size == h2 and $device == desktop{
+        font-size: 34px;
+        line-height: 120%;
+        letter-spacing: 6px;
+
+    }@else if $size == h2 and $device == mobile{
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: 6px;
+    }
+
+    //H3
+    @else if $size == h3 and $device == desktop{
+        font-size: 32px;
+        line-height: 120%;
+    }@else if $size == h3 and $device == mobile{
+        font-size: 16px;
+        line-height: 120%;
+    }
+    //H4
+    @else if $size == h4 and $device == desktop{
+        font-size: 24px;
+        line-height: 130%;
+
+        // Aqui para conseguir usar o gradient no texto
+        background: $gradient-3;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }@else if $size == h4 and $device == mobile{
+        font-size: 14px;
+        line-height: 130%;
+    }
+}
+
+@mixin body($size: b1, $device: desktop){
+    font-family: "Outfit", sans-serif;
+    //B1
+    @if $size == b1 and $device == desktop{
+        font-size: 20px;
+        line-height: 120%;
+    }@else if $size == b1 and $device == mobile{
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    //B2
+    @else if $size == b2 and $device == desktop{
+        font-size: 16px;
+        line-height: 130%;
+    }@else if $size == b2 and $device == mobile{
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    //B3
+    @else if $size == b3 and $device == desktop{
+        font-size: 14px;
+        line-height: 140%;
+    }@else if $size == b3 and $device == mobile{
+        font-size: 10px;
+        line-height: 150%;
+    }
+}
+
+//Incluindo as funções que foram criadas.S
+
+h1{
+    color: $black-dark;
+    @include titles(h1, desktop);
+
+    @include responsive(s){
+        @include titles(h1, mobile);
+    }
+}
+
+h2{
+    color: $blue-dark;
+    @include titles(h2, desktop);
+
+    @include responsive(s){
+        @include titles(h2, mobile);
+    }
+}
+
+h3{
+    color: $black-dark;
+    @include titles(h3, desktop);
+
+    @include responsive(s){
+        @include titles(h3, mobile);
+    }
+}
+
+h4{
+    @include titles(h4, desktop);
+
+    @include responsive(s){
+        @include titles(h4, mobile);
+    }
+}
+
+p{
+    color: $black-light;
+    @include body(b1, desktop);
+    @include responsive(s){
+        @include body(b1, mobile);
+    }
+}
+
+.smallP{
+    color: $black-ligthen;
+    @include body(b2, desktop);
+    @include responsive(s){
+        @include body(b2, mobile);
+    }
+}

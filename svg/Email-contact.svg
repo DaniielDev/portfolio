@@ -1,0 +1,11 @@
+<svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Email-contact">
+<path id="Vector 1" fill-rule="evenodd" clip-rule="evenodd" d="M1 9.4914V64.6855C1.22634 69.3024 2.58738 71.0588 6.77691 73H65.8141C70.9871 71.8537 72.2923 69.7927 73 64.6855V9.4914C72.1355 4.17469 70.993 1.93474 66.2368 1H7.48141C2.93825 1.87055 1.39855 3.5871 1 9.4914ZM8.04501 9.4914H12.5538L36.9296 28.5971L61.4462 9.4914H65.8141V64.1548H58.4873V24.5283L36.9296 41.688L15.3718 24.5283V64.1548H8.04501V9.4914Z" fill="url(#paint0_linear_175_19)" stroke="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_175_19" x1="1" y1="37" x2="73" y2="37" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4271EB"/>
+<stop offset="1" stop-color="#0531A4"/>
+</linearGradient>
+</defs>
+</svg>

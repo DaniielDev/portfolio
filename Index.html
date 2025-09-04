@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Outfit:wght@100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <meta name="keywords" content="frontend, backend, animation, css, web development, desenvolvimento web, ui, ux, uiux" />
+    <meta name="author" content="Daniel Pereira" />
+    <meta name="description" content="Portfólio de Daniel Pereira — desenvolvedor full stack, UI/UX e desenvolvimento web moderno." />
+
+
+    <!----CSS---->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+    <title>Daniel Pereira</title>
+    <meta name="description" content="Portfólio de Daniel Pereira — desenvolvedor full stack, UI/UX e desenvolvimento web moderno." />
+
+
+
+    <!----Scripts---->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/svg-inject.min.js"></script>
+
+</head>
+<body>
+    <!----Main---->
+    <main class="container">
+        <section id="svgs">
+            <img src="svg/R1.svg" class="svg-left" alt="svg-top-left" onload="SVGInject(this)">
+            <img src="svg/R2.svg" class="svg-right" alt="svg-bottom-right" onload="SVGInject(this)">
+        </section>
+
+        <header class="hero">
+            <h1>Daniel Pereira</h1>
+            <h2>DESENVOLVEDOR FULL STACK</h2>
+        </header>
+
+        <div id="square-scroll"></div>
+        <p id="scroll">SCROLL</p>
+    </main>
+    <!----!---->
+
+    <!----ScreenLoad---->
+    <section class="screenLoad">
+    <img src="svg/h1.svg" alt="h1" id="h1"  onload="SVGInject(this)">
+    </section>
+    
+    <!----Page division---->
+    <div class="baseline"></div>
+    <!----!!---->
+
+    <!----About---->
+    <section class="about">
+        <div class="img">
+            <img src="img/Minha foto.jpg" alt="Minha-Foto">
+        </div>
+        <div class="about-me">
+            <h4>Programador</h4>
+            <h3>Daniel Pereira</h3>
+            <p> Cursando: Desenvolvimento Full Stack,  Sou um desenvolvedor apaixonado por criar experiências digitais criativas e funcionais.
+            Busco unir design, performance e usabilidade para transformar ideias em projetos reais.  </p>
+        </div>
+    </section>
+    <!----!!!---->
+
+    <!----Page division---->
+    <div class="baseline"></div>
+    <!----!!---->
+
+    <!----Section skills---->
+    <section class="skills">
+        <h4>Habilidades</h4>
+        <h3>Desenvolvedor Full Stack</h3>
+        <h3>Motion Design</h3>
+        <h3>UX</h3>
+        <h3>UI</h3>
+    </section>
+
+    <section class="squares">
+        <div class="square-1"></div>
+        <div class="square-2"></div>
+    </section>
+    <!----!!!!---->
+
+    <!----Page division---->
+    <div class="baseline"></div>
+    <!----!!---->
+
+    <!----Section cards---->
+    <section class="cards-section">
+        <h4>Tecnologias e Ferramentas</h4>
+        <div class="cards-line-one">
+            <div class="pattern-cards-tec">
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                    <img src="svg/Html.svg"alt="Html" onload="SVGInject(this)">
+                </a>
+            </div>
+            <div class="pattern-cards-tec">
+                <a href=https://www.w3schools.com/css/default.asp target="_blank">
+                    <img src="svg/Css.svg"  alt="Css" onload="SVGInject(this)">
+                </a>
+            </div>
+            <div class="pattern-cards-tec">
+                <a href=https://github.com/DaniielDev target="_blank">
+                    <img src="svg/Github.svg" alt="Github" onload="SVGInject(this)">
+                </a>
+            </div>
+        </div>
+        <div class="cards-line-two">
+            <div class="pattern-cards-tec">
+                <a href=https://www.figma.com/pt-br/ target="_blank">
+                    <img src="svg/Figma.svg" alt="Figma" onload="SVGInject(this)">
+                </a>
+            </div>
+            <div class="pattern-cards-tec">
+                <a href=https://www.w3schools.com/js/default.asp target="_blank">
+                    <img src="svg/JS.svg" alt="JS" onload="SVGInject(this)">
+                </a>
+            </div>
+            <div class="pattern-cards-tec">
+                <a href=https://www.w3schools.com/java/default.asp target="_blank">
+                    <img src="svg/Java.svg" alt="Java" onload="SVGInject(this)">
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    <!----!!!!---->
+
+    <!----Page division---->
+    <div class="baseline"></div>
+    <!----!!---->
+
+    <!----Section projects---->
+    <section class="projects">
+        <h4>Projetos</h4>
+        <div class="projects-cards">
+            <div  class="standard-cards">
+                <img src="svg/Kg.svg"  alt="IMC" onload="SVGInject(this)">
+                <p>Calculadora IMC</p>
+            </div>
+            <div  class="standard-cards">
+                <img src="svg/Calculadora.svg"alt="Calculadora" onload="SVGInject(this)">
+                <p>Calculadora Simples</p>
+            </div>
+            <div  class="standard-cards">
+                <img src="svg/Jogo.svg"alt="Jogo" onload="SVGInject(this)">
+                <p>Gerador da Sorte</p>
+            </div>
+            <div  class="standard-cards">
+                <img src="svg/media.svg"alt="Jogo" onload="SVGInject(this)">
+                <p>Projeto Linktree</p>
+            </div>  
+        </div>
+        <button>
+            <a href=https://github.com/DaniielDev target="_blank" class="button-git">Ver no Github</a>
+        </button> 
+    </section>
+    <!----!!---->
+
+    <!----Page division---->
+    <div class="baseline"></div>
+    <!----!!---->
+
+    <!----Section contact---->
+    <section class="contact">
+        <h4>contato</h4>
+        <h3>
+            <a href="mailto:daniieldev@gmail.com">Daniieldev@gmail.com</a>
+        </h3>
+        <div class="contact-svgs">
+            <div class="git" >
+                <a href="https://github.com/DaniielDev" target="_blank" ><img src="svg/Git-contact.svg" class="contact-svgs-width" alt="git" onload="SVGInject(this)"></a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"><img src="svg/Linkdin-contact.svg" class="contact-svgs-width" alt="linkedin" onload="SVGInject(this)"></a>
+            </div>
+            <div class="email">
+                <a href="mailto:daniieldev@gmail.com" target="_blank"><img src="svg/Email-contact.svg" class="contact-svgs-width"  alt="email" onload="SVGInject(this)"></a>
+            </div>
+            <div class="intagram">
+                <a href="https://www.instagram.com/dev_daniieel/" target="_blank"><img src="svg/Insta-contact.svg" class="contact-svgs-width"  alt="instagram" onload="SVGInject(this)"></a>
+            </div>
+        </div>
+    </section>
+    <!----!!---->
+
+    <!----Page division---->
+    <div class="baseline"></div>
+    <!----!!---->
+
+    <!----Section footer---->
+    <footer class="rodape">
+        <div class="pt-1">
+        <p class="name">Daniel Pereira</p>
+        <p class="smallP">&copy; 2025 Daniel Pereira. Todos os direitos reservados</p>
+        </div>
+        <div class="pt-2">
+            <p class="smallP">Portfólio Daniel Pereira 2025</p>
+            <p class="smallP">by: Daniel Pereira</p>
+        </div>
+        <div class="footer-icons-svgs">
+            <div class="git-footer">
+                <a href="https://github.com/DaniielDev" target="_blank"><img src="svg/Git-footer.svg" class="footer-icon-svgs-animation" alt="git-footer" onload="SVGInject(this)"></a>
+            </div>
+            <div class="linkedin-footer">
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"><img src="svg/Linkedin-footer.svg" class="footer-icon-svgs-animation" alt="linkedin-footer" onload="SVGInject(this)"></a>
+            </div>
+            <div class="email-footer">
+                <a href="mailto:daniieldev@gmail.com" target="_blank"><img src="svg/Email-footer.svg" class="footer-icon-svgs-animation" alt="email-footer" onload="SVGInject(this)"></a>
+            </div>
+            <div class="insta-footer">
+                <a href="https://www.instagram.com/dev_daniieel/" target="_blank"><img src="svg/Insta-footer.svg" class="footer-icon-svgs-animation" alt="insta-footer" onload="SVGInject(this)"></a>
+            </div>
+        </div>
+    </footer>
+    <!----!!---->
+</body>
+</html>

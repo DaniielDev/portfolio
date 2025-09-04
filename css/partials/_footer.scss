@@ -1,0 +1,25 @@
+.rodape{
+    max-width: $container-xl;
+    margin: 0 auto;
+    text-align: center;
+    padding: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.name{
+    font-family: "Zen Dots", sans-serif;
+    color: $blue-dark;
+}
+
+.footer-icons-svgs{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-icon-svgs-animation{
+    transition:  0.3s ease;
+}

@@ -1,0 +1,11 @@
+<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Jogo">
+<path id="Game" d="M1 33H61V61H1V33Z" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="layer2" d="M47 43C48.1046 43 49 42.1046 49 41C49 39.8954 48.1046 39 47 39C45.8954 39 45 39.8954 45 41C45 42.1046 45.8954 43 47 43Z" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="layer2_2" d="M41 49C42.1046 49 43 48.1046 43 47C43 45.8954 42.1046 45 41 45C39.8954 45 39 45.8954 39 47C39 48.1046 39.8954 49 41 49Z" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="layer2_3" d="M53 49C54.1046 49 55 48.1046 55 47C55 45.8954 54.1046 45 53 45C51.8954 45 51 45.8954 51 47C51 48.1046 51.8954 49 53 49Z" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="layer2_4" d="M47 55C48.1046 55 49 54.1046 49 53C49 51.8954 48.1046 51 47 51C45.8954 51 45 51.8954 45 53C45 54.1046 45.8954 55 47 55Z" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="layer2_5" d="M13 41V53M7 47H19" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="layer1" d="M31 33V26C31 23.6131 31.9482 21.3239 33.636 19.636C35.3239 17.9482 37.6131 17 40 17H45C47.1217 17 49.1566 16.1571 50.6569 14.6569C52.1571 13.1566 53 11.1217 53 9V1" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

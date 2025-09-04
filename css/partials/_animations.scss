@@ -1,0 +1,139 @@
+// Scroll square animation
+
+#square-scroll {
+  animation: square 3.5s cubic-bezier(.49,.54,.76,.52) infinite alternate;
+}
+
+@keyframes square {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+ //---------------------------------//
+
+// Pattern-cards-skills animation
+
+.pattern-cards-tec:hover{
+    transform: scale(1.05);
+}
+
+//---------------------------------//
+
+// Standard-cards animation
+
+.standard-cards:hover{
+    animation: standard-cards 0.4s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+@keyframes standard-cards{
+    0% {
+      transform: rotate(0deg); 
+    }
+  25% {
+      transform: rotate(2deg); 
+    }
+  50% { 
+      transform: rotate(-2deg);
+    }
+  75% {
+      transform: rotate(2deg); 
+    }
+  100% { 
+      transform: rotate(0deg); 
+    }
+
+}
+
+//--------------------------------------------//
+
+// Button animation
+
+button:hover{
+  transform: scale(1.05);
+}
+
+// Button link animation
+.button-git:hover{
+    color: $black-normal;
+}
+
+//----------------------------------------------//
+
+// Animation of email
+
+.contact h3 a:hover{
+  color: $blue-dark;
+}
+
+// Animation contact svgs
+
+.contact-svgs-width:hover{
+  transform: scale(1.05);
+}
+
+//----------------------------------------------//
+
+//Footer animation
+
+.footer-icon-svgs-animation:hover{
+  transform: scale(1.05);
+}
+
+//--------------------------//
+
+//screenload //
+
+.screenLoad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white-normal;
+  z-index: 9999;
+  animation: fadeOut 1s ease 4.5s forwards; /* some após 8s */
+}
+
+/* Animação dos paths do SVG */
+#h1 path {
+  stroke: $black-dark;
+  stroke-width: 1;
+  fill: $black-dark;
+  stroke-dasharray: 1 1000;
+  
+  animation: h1path 8s ease-in-out 0s forwards; /* animação de escrever */
+}
+
+@keyframes h1path {
+  0%{
+    fill-opacity: 0;
+    stroke-dasharray: 1 1000;
+    opacity: 1;
+  }
+  30%{
+    fill-opacity: 0;
+    stroke-dasharray: 150 0;
+    stroke-width: 1;
+  }
+  40%, 100%{
+    fill-opacity: 1;
+    stroke-dasharray: 150 0;
+  }
+}
+
+/* Fade out do screenload */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
