@@ -82,7 +82,7 @@ $container-s: 540px;
 .baseline{
     width: 100%;
     height: 2px;
-    background: $blue-dark;
+    background: $gradient-2;
     margin: 42px 0px;
 }
 //------------------------------------//
@@ -99,7 +99,7 @@ $container-s: 540px;
 }
 
 #square-scroll{
-    background-color: $blue-dark;
+    background: $gradient-2;
     border: 2px solid $black-normal;
     height: 32px;
     width: 32px;
@@ -164,7 +164,7 @@ p{
 
 .img{
     width: 800px;
-    border: 3px solid $blue-normal;
+    border: 2px solid $pink-normal;
 
     @include responsive(s){
         width: 250px;
@@ -177,46 +177,46 @@ p{
     max-width:$container-xl;
     margin: 0 auto;
     padding: 96px;
-
+    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
-    gap: 100px;
+    align-items: center;
+    gap: 42px;
+
+    @include responsive(s){
+        h5{
+            font-size: 13px;
+        }
+    }
 
 }
 
-
-
-.skills h3{
+.skills h5{
     position: relative;
 
     &::after{
         position: absolute;
         content: "";
-        width: 12px;
+        width: 6px;
         height: 12px;
-        margin-right: 15px; 
-
+        margin-right: 10px;
         transform: rotate(45deg);
 
         top: 25%;
         right: 100%;
-        border-bottom: 2px solid $blue-normal;
-        border-right: 2px solid $blue-normal;
+        border-bottom: 2px solid $pink-normal;
+        border-right: 2px solid $pink-normal;
 
         @include responsive(s){
-            width: 10px;
+            width: 5px;
             height: 10px;
 
-
-            top: 5%;
+            top: 6%;
             margin-right: 8px;
         }
     }
 }
-
 
 
 .squares{
@@ -233,9 +233,9 @@ p{
 .square-1{
     width: 72px;
     height: 72px;
-    border: 3px solid $black-normal;
+    border: 2px solid $black-normal;
     border-radius: 2px;
-    background: $gradient-3;
+    background: $gradient-2;
 
     @include responsive(s){
         width: 32px;
@@ -247,9 +247,9 @@ p{
 .square-2{
     width: 72px;
     height: 72px;
-    border: 3px solid $black-normal;
+    border: 2px solid $black-normal;
     border-radius: 2px;
-    background: $gradient-3;
+    background: $gradient-2;
 
     @include responsive(s){
         width: 32px;
@@ -296,8 +296,9 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    background: $gradient-3;
+    border-radius: 8px;
+    background: $gradient-2;
+    border: 2px solid $pink-light;
 
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -347,10 +348,10 @@ p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 20px;
-    border: 2px solid $black-light;
+    border-radius: 8px;
+    border: 2px solid $pink-light;
     gap: 30px;
-    background: $gradient-3;
+    background: $gradient-2;
 
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
@@ -365,9 +366,11 @@ p{
 button{
     display: inline-block;
     padding: 12px 24px;
-    background: $gradient-3;
-    border-radius: 12px;
-    border: 2px solid $black-light;
+    background: $gradient-2;
+    border-radius: 8px;
+    border-width: 1px;
+    border: 2px solid $pink-light;
+    font-weight: bold; 
     cursor: pointer;
 
     transition: transform 0.2s ease;

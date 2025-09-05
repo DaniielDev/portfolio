@@ -41,13 +41,21 @@
         line-height: 130%;
 
         // Aqui para conseguir usar o gradient no texto
-        background: $gradient-3;
+        background: $gradient-2;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
     }@else if $size == h4 and $device == mobile{
         font-size: 14px;
         line-height: 130%;
+    }
+    //H5
+    @else if $size == h5 and $device == desktop{
+        font-size: 20px;
+        line-height: 140%;
+    }@else if $size == h5 and $device == mobile{
+        font-size: 14px;
+        line-height: 140%;
     }
 }
 
@@ -93,7 +101,7 @@ h1{
 }
 
 h2{
-    color: $blue-dark;
+    color: $pink-normal;
     @include titles(h2, desktop);
 
     @include responsive(s){
@@ -115,6 +123,15 @@ h4{
 
     @include responsive(s){
         @include titles(h4, mobile);
+    }
+}
+
+h5{
+    color: $black-dark;
+    @include titles(h5, desktop);
+
+    @include responsive(s){
+        @include titles(h5, mobile);
     }
 }
 
